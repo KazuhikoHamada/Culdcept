@@ -1,0 +1,2447 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55ffb7160fba4141b77d70efb1786d3, type: 3}
+  m_Name: Card
+  m_EditorClassIdentifier: 
+  List:
+  - Name: "\u30A2\u30FC\u30C1\u30B1\u30DF\u30C3\u30AF"
+    CardType: 0
+    RereType: 1
+    Cost: 40
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u5DFB\u7269] ; \u5730\u5F62\u5909\u5316\u30B3\u30B9\u30C8\u5909\u5316[G50]"
+  - Name: "\u30A2\u30FC\u30C1\u30D3\u30B7\u30E7\u30C3\u30D7"
+    CardType: 0
+    RereType: 0
+    Cost: 50
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G30\u30FB\u5BFE\u8C61\u9818\u5730\u306E\u546A\u3044\u3092\u6D88\u3059]
+      ; \u30A2\u30A4\u30C6\u30E0\u7834\u58CA\u30FB\u76D7\u307F\u7121\u52B9 ; \u4E0D\u5C48"
+  - Name: "\u30A2\u30FC\u30DE\u30FC\u30C9\u30E9\u30B4\u30F3"
+    CardType: 0
+    RereType: 1
+    Cost: 100
+    AdditionCostTypes: 
+    St: 50
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u79D8\u8853[G80\u30FB\u5BFE\u8C61\u7121\u306EHP-30]"
+  - Name: "\u30A2\u30A4\u30A2\u30F3\u30E2\u30F3\u30AC\u30FC"
+    CardType: 0
+    RereType: 2
+    Cost: 10
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G50\u30FB\u30A2\u30A4\u30C6\u30E0\u30AB\u30FC\u30C9\u30921\u679A\u5F15\u304F]"
+  - Name: "\u30A2\u30F3\u30C9\u30ED\u30AE\u30A2"
+    CardType: 0
+    RereType: 3
+    Cost: 250
+    AdditionCostTypes: 04000000
+    St: 60
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u7121\u52B9\u5316[\u5DFB\u7269] ; \u63F4\u8B77[\u7121]
+      ; \u5408\u4F53[\u30D3\u30FC\u30B9\u30C8\u30AE\u30A2]"
+  - Name: "\u30AA\u30FC\u30AC\u30ED\u30FC\u30C9"
+    CardType: 0
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u706B\u98A8\u30AA\u30FC\u30AC\u914D\u7F6E\u6642ST+20\u3001\u6C34\u5730\u30AA\u30FC\u30AC\u914D\u7F6E\u6642HP+20
+      ; \u5DFB\u7269\u5F37\u6253"
+  - Name: "\u30AE\u30A2\u30EA\u30AA\u30F3"
+    CardType: 0
+    RereType: 3
+    Cost: 300
+    AdditionCostTypes: 04000000
+    St: 80
+    Hp: 80
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u9632\u9B54 ; \u7121\u52B9\u5316[\u5DFB\u7269]"
+  - Name: "\u30B0\u30E9\u30F3\u30AE\u30A2"
+    CardType: 0
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77 ; \u5408\u4F53[\u30B9\u30AB\u30A4\u30AE\u30A2] ; \u7121\u52B9\u5316[\u5DFB\u7269]"
+  - Name: "\u30AF\u30EA\u30FC\u30D4\u30F3\u30B0\u30B3\u30A4\u30F3"
+    CardType: 0
+    RereType: 2
+    Cost: 20
+    AdditionCostTypes: 
+    St: 10
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u9B54\u529B\u7372\u5F97[G100] ; \u6226\u95D8\u3084\u30B9\u30DA\u30EB\u3067\u7834\u58CA\u6642\u3001\u907A\u7523[G100]"
+  - Name: "\u30B0\u30EC\u30FC\u30C8\u30D5\u30A9\u30B7\u30EB"
+    CardType: 0
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 04000000
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u901A\u884C\u6599\u5909\u5316[G0] ; \u6B7B\u8005\u5FA9\u6D3B[\u30C6\u30A3\u30E9\u30CE\u30B5\u30A6\u30EB\u30B9]"
+  - Name: "\u30AF\u30ED\u30C3\u30AF\u30A2\u30A6\u30EB"
+    CardType: 0
+    RereType: 2
+    Cost: 10
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G40\u30FB\u6B21R\u3001\u5BFE\u8C61\u30BB\u30D7\u30BF\u30FC\u306F\u9078\u3093\u3060\u65B9\u5411\u306B\u9032\u3081\u308B]"
+  - Name: "\u30B4\u30FC\u30EB\u30C9\u30C8\u30FC\u30C6\u30E0"
+    CardType: 0
+    RereType: 2
+    Cost: 0
+    AdditionCostTypes: 
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u79D8\u8853[G0\u30FB\u4F7F\u7528\u8005\u306BG200\u3092\u4E0E\u3048\u3001\u81EA\u58CA]"
+  - Name: "\u30B4\u30D6\u30EA\u30F3"
+    CardType: 0
+    RereType: 0
+    Cost: 0
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30B5\u30E0\u30E9\u30A4"
+    CardType: 0
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 50
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5373\u6B7B[ST40\u4EE5\u4E0A\u30FB70%]"
+  - Name: "\u30B7\u30FC\u30D5"
+    CardType: 0
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u76D7\u307F"
+  - Name: "\u30B7\u30A7\u30A4\u30D7\u30B7\u30D5\u30BF\u30FC"
+    CardType: 0
+    RereType: 1
+    Cost: 30
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G70\u30FB\u5BFE\u8C61\u3068\u540C\u3058\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306B\u5909\u8EAB]"
+  - Name: "\u30B7\u30E3\u30C9\u30A6\u30AC\u30A4\u30B9\u30C8"
+    CardType: 0
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; ST\u30C9\u30EC\u30A4\u30F3 ; \u4E0D\u5C48"
+  - Name: "\u30B9\u30AB\u30A4\u30AE\u30A2"
+    CardType: 0
+    RereType: 1
+    Cost: 40
+    AdditionCostTypes: 
+    St: 40
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77 ; \u5408\u4F53[\u30B0\u30E9\u30F3\u30AE\u30A2] ; \u5148\u5236"
+  - Name: "\u30B9\u30B1\u30EB\u30C8\u30F3"
+    CardType: 0
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u518D\u751F"
+  - Name: "\u30B9\u30BF\u30C1\u30E5\u30FC"
+    CardType: 0
+    RereType: 0
+    Cost: 10
+    AdditionCostTypes: 
+    St: 0
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u5468\u56DE\u56DE\u5FA9\u4E0D\u53EF"
+  - Name: "\u30B9\u30C1\u30FC\u30E0\u30AE\u30A2"
+    CardType: 0
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u901A\u884C\u6599\u5909\u5316[1/2]"
+  - Name: "\u30B9\u30C8\u30FC\u30F3\u30B8\u30BE\u30A6"
+    CardType: 0
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 10
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u9632\u9B54 ; \u79D8\u8853[G100\u30FB\u5BFE\u8C61\u9818\u5730\u3092\u8907\u306B\u5909\u3048\u3001\u81EA\u58CA]"
+  - Name: "\u30BB\u30A4\u30F3\u30C8"
+    CardType: 0
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u7121] ; \u5373\u6B7B[\u7121\u30FB100%]"
+  - Name: "\u30C6\u30A3\u30E9\u30CE\u30B5\u30A6\u30EB\u30B9"
+    CardType: 0
+    RereType: 2
+    Cost: 75
+    AdditionCostTypes: 
+    St: 50
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30C7\u30B3\u30A4"
+    CardType: 0
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 04000000
+    St: 0
+    Hp: 10
+    LimitAttributeTypes: 
+    AbilityName: "\u53CD\u5C04[\u901A\u5E38\u653B\u6483]"
+  - Name: "\u30C8\u30ED\u30FC\u30B8\u30E3\u30F3\u30DB\u30FC\u30B9"
+    CardType: 0
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u8CAB\u901A ; \u63F4\u8B77"
+  - Name: "\u30CB\u30EB=\u30D0\u30FC\u30CA"
+    CardType: 0
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 04000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77[\u7121] ; \u5148\u5236 ; \u79D8\u8853[G100\u30FB\u546A\u3044\u306E\u3064\u3044\u305F\u5168\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306EHP-20]"
+  - Name: "\u30CB\u30F3\u30B8\u30E3"
+    CardType: 0
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u5DFB\u7269\u5F37\u6253"
+  - Name: "\u30CF\u30FC\u30D5\u30EA\u30F3\u30B0"
+    CardType: 0
+    RereType: 0
+    Cost: 50
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u3069\u306E\u5C5E\u6027\u306E\u571F\u5730\u304B\u3089\u3082\u5730\u5F62\u52B9\u679C\u3092\u5F97\u308B
+      ; \u9632\u9B54"
+  - Name: "\u30CF\u30A4\u30C9\u30D3\u30CF\u30A4\u30F3\u30C9"
+    CardType: 0
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G40\u30FB\u5BFE\u8C61\u81EA\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306B\u546A\u3044\"\"\u5730\u5F62\u52B9\u679C\"\"]"
+  - Name: "\u30D0\u30EB\u30C0\u30F3\u30C0\u30FC\u30B9"
+    CardType: 0
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5909\u8EAB[\u30E9\u30F3\u30C0\u30E0]"
+  - Name: "\u30D0\u30F3\u30C7\u30A3\u30C3\u30C8"
+    CardType: 0
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77 ; \u9B54\u529B\u596A\u53D6[\u6575\u306B\u4E0E\u3048\u305F\u30C0\u30E1\u30FC\u30B8\xD7G2]"
+  - Name: "\u30D3\u30FC\u30B9\u30C8\u30AE\u30A2"
+    CardType: 0
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u5DFB\u7269] ; \u9632\u9B54"
+  - Name: "\u30D5\u30A1\u30A4\u30BF\u30FC"
+    CardType: 0
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30DC\u30FC\u30B8\u30A7\u30B9"
+    CardType: 0
+    RereType: 1
+    Cost: 40
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5FDC\u63F4[\u7121\u30FBHP+20]"
+  - Name: "\u30DF\u30B4\u30FC\u30EB"
+    CardType: 0
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 04000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5F37\u6253[\u6C34\u5730] ; \u7121\u52B9\u5316[\u706B\u98A8]"
+  - Name: "\u30EA\u30D3\u30F3\u30B0\u30A2\u30FC\u30DE\u30FC"
+    CardType: 0
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC ;
+      \u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u3068\u3057\u3066\u6226\u95D8\u4E2D\u3001ST+50"
+  - Name: "\u30EA\u30D3\u30F3\u30B0\u30A2\u30E0\u30EB"
+    CardType: 0
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 20
+    Hp: 10
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC ;
+      \u6575\u6B66\u5668\u4E0D\u4F7F\u7528\u6642\u3001\u6B7B\u8005\u5FA9\u6D3B[\u30EA\u30D3\u30F3\u30B0\u30A2\u30E0\u30EB]"
+  - Name: "\u30EA\u30D3\u30F3\u30B0\u30B0\u30ED\u30FC\u30D6"
+    CardType: 0
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC ;
+      ST&HP=\u4ED6\u5C5E\u6027\u306E\u914D\u7F6E\u6570\xD75"
+  - Name: "\u30EA\u30D3\u30F3\u30B0\u30D8\u30EB\u30E0"
+    CardType: 0
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC"
+  - Name: "\u30EA\u30D3\u30F3\u30B0\u30DC\u30E0"
+    CardType: 0
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 
+    St: 10
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC ;
+      \u9053\u9023\u308C[HP20\u4EE5\u4E0B]"
+  - Name: "\u30EB\u30CA\u30C6\u30A3\u30C3\u30AF\u30D8\u30A2"
+    CardType: 0
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u5F8C\u3001\u6575\u306EST\u3068MHP\u3092\u4EA4\u63DB"
+  - Name: "\u30EC\u30B8\u30A7\u30F3\u30C9\u30D5\u30A1\u30ED\u30B9"
+    CardType: 0
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 04000000
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u5468\u56DE\u56DE\u5FA9\u4E0D\u53EF ; \u79D8\u8853[G80\u30FB\u96A3\u63A5\u7A7A\u5730\u306B\u30B9\u30BF\u30C1\u30E5\u30FC\u3092\u914D\u7F6E]"
+  - Name: "\u30EC\u30C3\u30C9\u30AD\u30E3\u30C3\u30D7"
+    CardType: 0
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 04000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP=\u30B4\u30D6\u30EA\u30F3\u914D\u7F6E\u6570\xD720 ; \u5FDC\u63F4[\u30B4\u30D6\u30EA\u30F3\u30FBST+20]"
+  - Name: "\u30ED\u30C3\u30AF\u30BF\u30A4\u30BF\u30F3"
+    CardType: 0
+    RereType: 1
+    Cost: 90
+    AdditionCostTypes: 
+    St: 70
+    Hp: 70
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u5F8C\u3001ST&MHP-10"
+  - Name: "\u30EF\u30F3\u30C0\u30FC\u30A6\u30A9\u30FC\u30EB"
+    CardType: 0
+    RereType: 2
+    Cost: 10
+    AdditionCostTypes: 04000000
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u7121\u52B9\u5316[\u706B\u6C34\u5730\u98A8]"
+  - Name: "\u30A2\u30FC\u30E0\u30C9\u30D1\u30E9\u30C7\u30A3\u30F3"
+    CardType: 1
+    RereType: 3
+    Cost: 200
+    AdditionCostTypes: 0000000000000000
+    St: 0
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "ST=\u706B\u5730\u914D\u7F6E\u6570\xD710 ; \u7121\u52B9\u5316[\u5DFB\u7269]"
+  - Name: "\u30A2\u30E2\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u611F\u5FDC[\u5730\u30FBST&HP+20] ; \u9632\u9B54"
+  - Name: "\u30A2\u30F3\u30B0\u30EA\u30FC\u30E2\u30D6"
+    CardType: 1
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 00000000
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "A\u30DC\u30BF\u30F3\u9023\u6253\u3067ST\u4E0A\u6607"
+  - Name: "\u30A6\u30EA\u30A8\u30EB"
+    CardType: 1
+    RereType: 1
+    Cost: 90
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5F37\u6253[\u546A\u3044\u4ED8\u304D\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC]
+      ; \u79D8\u8853[G50\u30FB\u4E16\u754C\u546A\u3044\u3092\u6D88\u3059]"
+  - Name: "\u30AA\u30FC\u30EB\u30C9\u30A6\u30A3\u30ED\u30A6"
+    CardType: 1
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 0000000000000000
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u8DB3\u3069\u3081[\u706B]"
+  - Name: "\u30AC\u30B9\u30AF\u30E9\u30A6\u30C9"
+    CardType: 1
+    RereType: 0
+    Cost: 45
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[1/2]"
+  - Name: "\u30AD\u30E1\u30E9"
+    CardType: 1
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 00000000
+    St: 30
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u5468\u56DE\u3054\u3068\u306BST+10"
+  - Name: "\u30AD\u30F3\u30B0\u30D0\u30E9\u30F3"
+    CardType: 1
+    RereType: 0
+    Cost: 100
+    AdditionCostTypes: 
+    St: 60
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30B0\u30E9\u30C7\u30A3\u30A8\u30FC\u30BF\u30FC"
+    CardType: 1
+    RereType: 0
+    Cost: 75
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5F37\u6253[\u706B\u6C34\u5730\u98A8]"
+  - Name: "\u30AF\u30EA\u30FC\u30D4\u30F3\u30B0\u30D5\u30EC\u30A4\u30E0"
+    CardType: 1
+    RereType: 0
+    Cost: 55
+    AdditionCostTypes: 
+    St: 30
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u79D8\u8853[G30\u30FB1\u30DE\u30B9\u79FB\u52D5]"
+  - Name: "\u30B1\u30C3\u30C8\u30B7\u30FC"
+    CardType: 1
+    RereType: 0
+    Cost: 50
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 01000000
+    AbilityName: "\u7121\u52B9\u5316[ST40\u4EE5\u4E0A] ; \u9632\u9B54"
+  - Name: "\u30B3\u30F3\u30B8\u30E3\u30E9\u30FC"
+    CardType: 1
+    RereType: 2
+    Cost: 45
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u5F37\u6253 ; \u79D8\u8853[G80\u30FB\u597D\u304D\u306A\u7A7A\u5730\u306B\u30D0=\u30A2\u30EB\u3092\u53EC\u559A\u3057\u81EA\u58CA]"
+  - Name: "\u30B5\u30EB\u30D5\u30A1\u30D0\u30EB\u30FC\u30F3"
+    CardType: 1
+    RereType: 1
+    Cost: 20
+    AdditionCostTypes: 00000000
+    St: 10
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u81EA\u7834\u58CA\u6642\u3001\u6575\u306EHP-40"
+  - Name: "\u30B7\u30FC\u30EB\u30C9\u30E1\u30A4\u30C7\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 80
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u4E0D\u5C48"
+  - Name: "\u30B8\u30A7\u30CD\u30E9\u30EB=\u30AB\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 65
+    AdditionCostTypes: 00000000
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; ST+MHP50\u4EE5\u4E0A\u914D\u7F6E\u6570\xD75"
+  - Name: "\u30B7\u30B0\u30EB\u30C9"
+    CardType: 1
+    RereType: 2
+    Cost: 80
+    AdditionCostTypes: 00000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5373\u6B7B[ST50\u4EE5\u4E0A\u30FB60%] ; \u7121\u52B9\u5316[MHP50\u4EE5\u4E0A]"
+  - Name: "\u30B7\u30E3\u30E9\u30B6\u30FC\u30C9"
+    CardType: 1
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77[\u706B\u5730] ; \u79D8\u8853[G30\u30FB\u5168\u30BB\u30D7\u30BF\u30FC\u306E\u546A\u3044\u3092\u6D88\u3059]"
+  - Name: "\u30B7\u30E7\u30C3\u30AB\u30FC"
+    CardType: 1
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 10
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u653B\u6483\u6210\u529F\u6642\u3001\u6575\u3092\u30C0\u30A6\u30F3
+      ; \u4E0D\u5C48"
+  - Name: "\u30C6\u30A3\u30A2\u30DE\u30C8"
+    CardType: 1
+    RereType: 1
+    Cost: 110
+    AdditionCostTypes: 0000000000000000
+    St: 60
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u5F37\u6253[\u6C34\u98A8] ; \u571F\u5730\u5909\u6027[\u706B]"
+  - Name: "\u30C7\u30B9\u30B5\u30A4\u30BA"
+    CardType: 1
+    RereType: 2
+    Cost: 15
+    AdditionCostTypes: 04000000
+    St: 70
+    Hp: 10
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G50\u30FB\u30DE\u30DF\u30FC\u306B\u5909\u8EAB]"
+  - Name: "\u30C7\u30B9\u30EA\u30FC\u30C1"
+    CardType: 1
+    RereType: 1
+    Cost: 20
+    AdditionCostTypes: 00000000
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 03000000
+    AbilityName: "\u79D8\u8853[G80\u30FBHP\u304C\u6E1B\u5C11\u3057\u30C0\u30A6\u30F3\u3057\u305F\u5BFE\u8C61\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u3092\u7834\u58CA\u3057\u3001\u305D\u3053\u306B\u79FB\u52D5]"
+  - Name: "\u30C7\u30C3\u30C9\u30A6\u30A9\u30FC\u30ED\u30FC\u30C9"
+    CardType: 1
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 04000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5408\u6210[\u5730\u30FBST&MHP+20] ; \u5FDC\u63F4[\u4FB5\u7565\u5074\u30FBST+10]"
+  - Name: "\u30C9\u30A5\u30FC\u30E0\u30C7\u30DC\u30E9\u30FC"
+    CardType: 1
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u81EA\u30C0\u30A4\u30B93\u4EE5\u4E0B\u306E\u5834\u5408\u3001ST&MHP+10
+      ; \u79D8\u8853[G0\u30FBMHP\xD7G2\u3092\u5F97\u3066\u3001ST&MHP-10]"
+  - Name: "\u30C9\u30E2\u30D3\u30FC"
+    CardType: 1
+    RereType: 2
+    Cost: 20
+    AdditionCostTypes: 
+    St: 10
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G80\u30FB\u5BFE\u8C61\u81EA\u9818\u5730\u306B\u546A\u3044\"\"\u9632\u9B54\"\"]"
+  - Name: "\u30CA\u30A4\u30C8\u30A8\u30E9\u30F3\u30C8"
+    CardType: 1
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 04000000
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5408\u6210[\u5730\u30FB\u30A2\u30FC\u30E0\u30C9\u30D1\u30E9\u30C7\u30A3\u30F3\u306B\u5909\u8EAB]
+      ; \u53CD\u5C04[1/2]"
+  - Name: "\u30CD\u30D3\u30ED\u30B9"
+    CardType: 1
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 00000000
+    St: 50
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u30AB\u30FC\u30C9\u7372\u5F97[5\u679A\u307E\u3067] ; \u6575\u30A2\u30A4\u30C6\u30E0\u4E0D\u4F7F\u7528\u6642\u3001\u5F37\u6253"
+  - Name: "\u30D0=\u30A2\u30EB"
+    CardType: 1
+    RereType: 0
+    Cost: 40
+    AdditionCostTypes: 0000000004000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u4EE3\u511F[\u30E9\u30F3\u30C0\u30E0\u306A\u624B\u672D1\u679A]"
+  - Name: "\u30D0\u30FC\u30C9\u30E1\u30A4\u30C7\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 65
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u4E0D\u5C48 ; \u79D8\u8853[G50\u30FB\u5BFE\u8C61\u81EA\u9818\u5730\u306B\u546A\u3044\"\"\u9060\u9694\u79FB\u52D5\"\"]"
+  - Name: "\u30D0\u30FC\u30CA\u30C3\u30AF\u30EB"
+    CardType: 1
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 60
+    LimitAttributeTypes: 03000000
+    AbilityName: "\u9632\u5FA1\u578B ; \u79D8\u8853[G50\u30FB\u5BFE\u8C61\u6575\u9818\u5730\u306B\u546A\u3044\"\"\u901A\u884C\u65991/2\"\"]"
+  - Name: "\u30D0\u30FC\u30F3\u30BF\u30A4\u30BF\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 90
+    AdditionCostTypes: 
+    St: 60
+    Hp: 60
+    LimitAttributeTypes: 01000000
+    AbilityName: "\u81EA\u9818\u5730\u304C5\u3064\u4EE5\u4E0A\u306E\u5834\u5408\u3001ST&HP-30"
+  - Name: "\u30CF\u30A4\u30D6\u30AF\u30A4\u30FC\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 00000000
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G20\u30FB\u624B\u672D\u306B\u30CF\u30A4\u30D6\u30EF\u30FC\u30AB\u30FC\u3092\u52A0\u3048\u308B]"
+  - Name: "\u30CF\u30A4\u30D6\u30EF\u30FC\u30AB\u30FC"
+    CardType: 1
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP+\u30CF\u30A4\u30D6\u30EF\u30FC\u30AB\u30FC\u914D\u7F6E\u6570\xD710"
+  - Name: "\u30D1\u30A4\u30ED\u30AF\u30EB\u30B9"
+    CardType: 1
+    RereType: 1
+    Cost: 30
+    AdditionCostTypes: 04000000
+    St: 10
+    Hp: 40
+    LimitAttributeTypes: 01000000
+    AbilityName: "\u5408\u6210[\u5358\u77AC\u30B9\u30DA\u30EB\u30FB\u30D8\u30EB\u30D1\u30A4\u30ED\u30F3\u306B\u5909\u8EAB]
+      ; \u7121\u52B9\u5316[\u5DFB\u7269]"
+  - Name: "\u30D1\u30A4\u30ED\u30DE\u30F3\u30B5\u30FC"
+    CardType: 1
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST30] ; \u6575\u653B\u6483\u6210\u529F\u306E\u6226\u95D8\u5F8C\u3001ST=20\u3001MHP=30"
+  - Name: "\u30D0\u30EB\u30AD\u30EA\u30FC"
+    CardType: 1
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 00000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77[\u7121\u706B\u5730] ; \u5148\u5236 ; \u6575\u7834\u58CA\u6642\u3001ST+10"
+  - Name: "\u30D4\u30E5\u30C8\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 75
+    AdditionCostTypes: 00000000
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u8CAB\u901A[ST40\u4EE5\u4E0A] ; \u4FB5\u7565\u6642\u3001\u9B54\u529B\u7372\u5F97[G100]"
+  - Name: "\u30D5\u30A1\u30A4\u30A2\u30FC\u30C9\u30EC\u30A4\u30AF"
+    CardType: 1
+    RereType: 2
+    Cost: 80
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u706B\u914D\u7F6E\u6570\xD75"
+  - Name: "\u30D5\u30A1\u30A4\u30A2\u30FC\u30D3\u30FC\u30AF"
+    CardType: 1
+    RereType: 1
+    Cost: 95
+    AdditionCostTypes: 00000000
+    St: 50
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u8CAB\u901A[\u6C34\u98A8] ; \u5F37\u6253[\u6C34\u98A8]"
+  - Name: "\u30D5\u30A7\u30A4"
+    CardType: 1
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 01000000
+    AbilityName: "\u79D8\u8853[G50\u30FB\u5BFE\u8C61\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306EST+20]
+      ; \u5DFB\u7269\u5F37\u6253"
+  - Name: "\u30D5\u30A7\u30CB\u30C3\u30AF\u30B9"
+    CardType: 1
+    RereType: 0
+    Cost: 40
+    AdditionCostTypes: 
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5FA9\u6D3B"
+  - Name: "\u30D5\u30EC\u30A4\u30E0\u30C7\u30E5\u30FC\u30AF"
+    CardType: 1
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 0000000000000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u6B66\u5668\u4F7F\u7528\u6642\u3001\u5F37\u6253
+      ; \u30A2\u30A4\u30C6\u30E0\u5FA9\u5E30[\u30D6\u30C3\u30AF]"
+  - Name: "\u30D5\u30ED\u30AE\u30B9\u30C8\u30F3"
+    CardType: 1
+    RereType: 0
+    Cost: 35
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5F37\u6253[MHP40\u4EE5\u4E0B]"
+  - Name: "\u30D8\u30EB\u30D1\u30A4\u30ED\u30F3"
+    CardType: 1
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 000000000000000004000000
+    St: 70
+    Hp: 60
+    LimitAttributeTypes: 03000000
+    AbilityName: "\u5FDC\u63F4[\u706B\u5730\u30FBST+10] ; \u79D8\u8853[G30\u30FB\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u7834\u58CA\u6570\xD7G30\u3092\u5F97\u308B]"
+  - Name: "\u30DC\u30EB\u30AB\u30CB\u30C3\u30AF\u30C9\u30E9\u30B4\u30F3"
+    CardType: 1
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 0000000000000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 01000000
+    AbilityName: "\u5148\u5236 ; \u5DFB\u7269\u653B\u6483[ST=\u57FA\u672CST]"
+  - Name: "\u30DF\u30CE\u30BF\u30A6\u30ED\u30B9"
+    CardType: 1
+    RereType: 0
+    Cost: 60
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30E0\u30B7\u30E5\u30D5\u30B7\u30E5"
+    CardType: 1
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 00000000
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u611F\u5FDC[\u5730\u30FBST+20\u3001HP+10] ; \u5F37\u6253[\u706B\u5730]"
+  - Name: "\u30E9\u30FC\u30D0\u30AD\u30F3"
+    CardType: 1
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 60
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "ST-\u73FER\u6570\u3001HP+\u73FER\u6570"
+  - Name: "\u30EC\u30C3\u30C9\u30AA\u30FC\u30AC"
+    CardType: 1
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30ED\u30FC\u30F3\u30D3\u30FC\u30B9\u30C8"
+    CardType: 1
+    RereType: 2
+    Cost: 80
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "HP+\u57FA\u672CST ; \u96A3\u304C\u81EA\u9818\u5730\u306A\u3089\u5F37\u6253"
+  - Name: "G\u30FB\u30A4\u30FC\u30EB"
+    CardType: 2
+    RereType: 0
+    Cost: 60
+    AdditionCostTypes: 01000000
+    St: 30
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u5730\u98A8]"
+  - Name: "G\u30FB\u30CE\u30FC\u30C1\u30E9\u30B9"
+    CardType: 2
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 
+    St: 10
+    Hp: 70
+    LimitAttributeTypes: 00000000
+    AbilityName: '-'
+  - Name: "\u30A2\u30A4\u30B9\u30A6\u30A9\u30FC\u30EB"
+    CardType: 2
+    RereType: 0
+    Cost: 25
+    AdditionCostTypes: 
+    St: 0
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; HP+20"
+  - Name: "\u30A2\u30AF\u30A2\u30C7\u30E5\u30FC\u30AF"
+    CardType: 2
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 0100000001000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77[\u6C34] ; \u9632\u5177\u4F7F\u7528\u6642\u3001\u7121\u52B9\u5316[\u901A\u5E38\u653B\u6483]
+      ; HP\u52B9\u679C\u7121\u52B9"
+  - Name: "\u30A2\u30AF\u30A2\u30DB\u30FC\u30F3"
+    CardType: 2
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 50
+    Hp: 30
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u7121\u52B9\u5316[\u6C34\u5730] ; \u79D8\u8853[G30\u30FB\u30DF\u30B9\u30C8\u30A6\u30A3\u30F3\u30B0\u306B\u5909\u8EAB]"
+  - Name: "\u30A2\u30AF\u30A2\u30EA\u30F3\u30B0"
+    CardType: 2
+    RereType: 0
+    Cost: 40
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[MHP30\u4EE5\u4E0B]"
+  - Name: "\u30A2\u30D7\u30B5\u30E9\u30B9"
+    CardType: 2
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 01000000
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u5730\u304C\u30EC\u30D9\u30EB3\u4EE5\u4E0A\u306E\u5834\u5408\u3001\u7121\u52B9\u5316[\u901A\u5E38\u653B\u6483]"
+  - Name: "\u30A2\u30DE\u30BE\u30F3"
+    CardType: 2
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u4E0D\u4F7F\u7528\u6642\u3001\u9B54\u529B\u596A\u53D6[\u5468\u56DE\u6570\xD7G30]"
+  - Name: "\u30A2\u30EB\u30D7"
+    CardType: 2
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u79D8\u8853[G50\u30FB\u5BFE\u8C61\u6575\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u3092\u30C0\u30A6\u30F3]"
+  - Name: "\u30A2\u30F3\u30C0\u30A4\u30F3"
+    CardType: 2
+    RereType: 0
+    Cost: 55
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "HP=\u6C34\u81EA\u9818\u5730\u6570\xD720 ; \u7121\u52B9\u5316[\u6C34]"
+  - Name: "\u30A2\u30F3\u30D5\u30A3\u30D3\u30A2\u30F3"
+    CardType: 2
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u5730\u304C\u6C34\u98A8\u306E\u5834\u5408\u3001ST+20
+      ; HP\u52B9\u679C\u7121\u52B9"
+  - Name: "\u30A4\u30A8\u30C6\u30A3"
+    CardType: 2
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 01000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5373\u6B7B[\u706B\u30FB60%] ; \u7121\u52B9\u5316[\u706B]"
+  - Name: "\u30A4\u30C9"
+    CardType: 2
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 0100000004000000
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5408\u6210[\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u30FB\u4F9B\u7269\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306B\u5909\u8EAB]
+      ; \u7121\u52B9\u5316[\u5DFB\u7269]"
+  - Name: "\u30A8\u30AD\u30CE\u30C0\u30FC\u30E0"
+    CardType: 2
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u518D\u751F ; \u4E0D\u5C48"
+  - Name: "\u30AA\u30C8\u30D2\u30E1"
+    CardType: 2
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 01000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5FDC\u63F4[\u9632\u5FA1\u5074\u30FBHP+10] ; \u6226\u95D8\u5F8C\u3001\u6575\u306B\u546A\u3044\"\"\u6226\u95D8\u5F8C\u7834\u58CA"
+  - Name: "\u30AA\u30C9\u30F3\u30C8\u30C6\u30A3\u30E9\u30CC\u30B9"
+    CardType: 2
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 01000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u611F\u5FDC[\u98A8\u30FBST+20\u3001HP+10]"
+  - Name: "\u30AB\u30A4\u30B6\u30FC\u30DA\u30F3\u30AE\u30F3"
+    CardType: 2
+    RereType: 2
+    Cost: 90
+    AdditionCostTypes: 
+    St: 30
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u7834\u58CA[\u9053\u5177\u304B\u5DFB\u7269\u304B\u63F4\u8B77\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC]"
+  - Name: "\u30AB\u30EF\u30D2\u30E1"
+    CardType: 2
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u4E0D\u5C48 ; \u79D8\u8853[G30\u30FB\u5BFE\u8C61\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306EST-10]"
+  - Name: "\u30AD\u30ED\u30CD\u30C3\u30AF\u30B9"
+    CardType: 2
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 30
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u5074\u306A\u3089\u5373\u6B7B[\u5168\u30FB80%] ; \u81EA\u7834\u58CA\u6642\u3001G100\u3092\u5931\u3046"
+  - Name: "\u30AD\u30F3\u30B0\u30C8\u30FC\u30BF\u30B9"
+    CardType: 2
+    RereType: 0
+    Cost: 100
+    AdditionCostTypes: 
+    St: 50
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u5F8C\u624B"
+  - Name: "\u30B0\u30EB\u30A4\u30FC\u30B9\u30E9\u30C3\u30B0"
+    CardType: 2
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u79FB\u52D5\u4FB5\u7565\u3092\u53D7\u3051\u306A\u3044"
+  - Name: "\u30B1\u30EB\u30D4\u30FC"
+    CardType: 2
+    RereType: 2
+    Cost: 80
+    AdditionCostTypes: 01000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u8DB3\u3069\u3081[\u6C34]"
+  - Name: "\u30B4\u30FC\u30B9\u30C8\u30B7\u30C3\u30D7"
+    CardType: 2
+    RereType: 2
+    Cost: 75
+    AdditionCostTypes: 
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u611F\u5FDC[\u98A8\u30FBHP+30] ; \u7121\u52B9\u5316[ST40\u4EE5\u4E0B]"
+  - Name: "\u30B7\u30FC\u30DC\u30F3\u30BA"
+    CardType: 2
+    RereType: 1
+    Cost: 40
+    AdditionCostTypes: 
+    St: 10
+    Hp: 40
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u9632\u5FA1\u578B ; \u6226\u95D8\u4E2D\u80FD\u529B\u7121\u52B9"
+  - Name: "\u30B9\u30AD\u30E5\u30E9"
+    CardType: 2
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 01000000
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u6575\u306E\u653B\u6483\u6210\u529F\u6642\u80FD\u529B\u3092\u7121\u52B9\u5316
+      ; \u6226\u95D8\u5F8C\u3001\u6575\u306B\u546A\u3044\"\"\u901A\u884C\u6599\u7121\u52B9"
+  - Name: "\u30B9\u30E9\u30C3\u30B8\u30BF\u30A4\u30BF\u30F3"
+    CardType: 2
+    RereType: 2
+    Cost: 90
+    AdditionCostTypes: 
+    St: 50
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u958B\u59CB\u6642\u3001HP\u6E1B\u5C11\u3057\u3066\u3044\u305F\u3089\u81EA\u58CA
+      ; \u518D\u751F"
+  - Name: "\u30B9\u30EF\u30F3\u30D7\u30B9\u30DD\u30FC\u30F3"
+    CardType: 2
+    RereType: 1
+    Cost: 20
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u9632\u5FA1\u578B ; \u79D8\u8853[G50\u30FB\u5BFE\u8C61\u30BB\u30D7\u30BF\u30FC\u306B\u546A\u3044\"\"\u30C0\u30A4\u30B91\u301C3\"\"]"
+  - Name: "\u30BC\u30E9\u30C1\u30F3\u30A6\u30A9\u30FC\u30EB"
+    CardType: 2
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 10
+    Hp: 50
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u9632\u5FA1\u578B ; \u9B54\u529B\u7372\u5F97[\u53D7\u3051\u305F\u30C0\u30E1\u30FC\u30B8\xD7G5]"
+  - Name: "\u30C7\u30A3\u30FC\u30D7\u30B7\u30FC\u30C9\u30E9\u30B4\u30F3"
+    CardType: 2
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 0100000001000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u5148\u5236 ; \u5DFB\u7269\u653B\u6483[ST=\u57FA\u672CST]"
+  - Name: "\u30C6\u30F3\u30BF\u30AF\u30EB\u30BA"
+    CardType: 2
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 01000000
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u518D\u751F ; \u30AB\u30FC\u30C9\u7372\u5F97[5\u679A\u306B\u306A\u308B\u307E\u3067]"
+  - Name: "\u30C8\u30EA\u30C8\u30F3"
+    CardType: 2
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u4F7F\u7528\u306E\u6226\u95D8\u5F8C\u3001\u30AB\u30FC\u30C9\u7372\u5F97
+      ; \u5DFB\u7269\u5F37\u6253"
+  - Name: "\u30CD\u30C3\u30B7\u30FC"
+    CardType: 2
+    RereType: 2
+    Cost: 45
+    AdditionCostTypes: 01000000
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u6C34\u3067\u6226\u95D8\u4E2D\u3001HP+\u9818\u5730\u30EC\u30D9\u30EB\xD710"
+  - Name: "\u30CF\u30A4\u30C9"
+    CardType: 2
+    RereType: 2
+    Cost: 20
+    AdditionCostTypes: 01000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u79D8\u8853[G50\u30FB\u5BFE\u8C61\u6575\u9818\u5730\u306B\u546A\u3044\"\"\u6226\u95D8\u884C\u52D5\u4E0D\u53EF\"\"]"
+  - Name: "\u30D0\u30CF\u30E0\u30FC\u30C8"
+    CardType: 2
+    RereType: 1
+    Cost: 110
+    AdditionCostTypes: 0100000001000000
+    St: 60
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u571F\u5730\u5909\u6027[\u6C34] ; \u518D\u751F"
+  - Name: "\u30D3\u30B8\u30E9\u30F3\u30C6"
+    CardType: 2
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 01000000
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "A\u30DC\u30BF\u30F3\u9023\u6253\u3067HP\u4E0A\u6607"
+  - Name: "\u30D2\u30C3\u30DD\u30AB\u30F3\u30D1\u30B9"
+    CardType: 2
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 01000000
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u7121] ; \u79D8\u8853[G60\u30FB\u30B1\u30EB\u30D4\u30FC\u306B\u5909\u8EAB]"
+  - Name: "\u30D5\u30A7\u30A4\u30C8"
+    CardType: 2
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 10
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u907A\u7523[\u30AB\u30FC\u30C91\u679A] ; \u79D8\u8853[G40\u30FB\u30AB\u30FC\u30C9\u30921\u679A\u5F15\u304F]"
+  - Name: "\u30D6\u30E9\u30C3\u30C9\u30D7\u30EA\u30F3"
+    CardType: 2
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77[\u6C34\u5730\u98A8] ; \u6226\u95D8\u524D\u3001MHP+\u63F4\u8B77\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306EHP"
+  - Name: "\u30D6\u30EB\u30FC\u30AA\u30FC\u30AC"
+    CardType: 2
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30D8\u30EB\u30B0\u30E9\u30DE\u30A4\u30C8"
+    CardType: 2
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 01000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u6B7B\u8005\u5FA9\u6D3B[\u30B5\u30FC\u30DA\u30F3\u30C8\u30D5\u30E9\u30A4]"
+  - Name: "\u30DE\u30A4\u30B3\u30ED\u30F3"
+    CardType: 2
+    RereType: 2
+    Cost: 35
+    AdditionCostTypes: 
+    St: 10
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u6575\u653B\u6483\u6210\u529F\u306E\u6226\u95D8\u5F8C\u3001\u30E9\u30F3\u30C0\u30E0\u306A\u7A7A\u5730\u306B\u30DE\u30A4\u30B3\u30ED\u30F3\u3092\u914D\u7F6E
+      ; \u518D\u751F"
+  - Name: "\u30DE\u30AB\u30E9"
+    CardType: 2
+    RereType: 1
+    Cost: 65
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u4E0D\u5C48 ; \u79D8\u8853[G100\u30FB\u914D\u7F6E\u9818\u5730\u3092\u6C34\u306B\u5909\u3048\u308B]"
+  - Name: "\u30DF\u30B9\u30C8\u30A6\u30A3\u30F3\u30B0"
+    CardType: 2
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u706B\u98A8] ; \u79D8\u8853[G30\u30FB\u30A2\u30AF\u30A2\u30DB\u30FC\u30F3\u306B\u5909\u8EAB]"
+  - Name: "\u30E1\u30AC\u30ED\u30C9\u30F3"
+    CardType: 2
+    RereType: 0
+    Cost: 40
+    AdditionCostTypes: 
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 0000000003000000
+    AbilityName: '-'
+  - Name: "\u30E9\u30CF\u30D6"
+    CardType: 2
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 010000000100000004000000
+    St: 60
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[ST50\u4EE5\u4E0A] ; \u5FDC\u63F4[\u6C34\u98A8\u30FBHP+10]"
+  - Name: "\u30EA\u30B6\u30FC\u30C9\u30DE\u30F3"
+    CardType: 2
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236"
+  - Name: "\u30EA\u30EA\u30B9"
+    CardType: 2
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; ST=\u81EA\u624B\u672D\u6570\xD710"
+  - Name: "\u30EB\u30FC\u30F3\u30A2\u30C7\u30D7\u30C8"
+    CardType: 2
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 01000000
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u5F37\u6253 ; \u9632\u9B54 ; \u79D8\u8853[G100\u30FB\u81EA\u624B\u672D\u306E\u5358\u77AC\u30AB\u30FC\u30C9\u306E\u52B9\u679C\u3092\u4F7F\u7528]"
+  - Name: "\u30A2\u30FC\u30E0\u30C9\u30D7\u30EA\u30F3\u30BB\u30B9"
+    CardType: 4
+    RereType: 3
+    Cost: 200
+    AdditionCostTypes: 0300000003000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u63F4\u8B77[\u6C34\u98A8] ; \u5148\u5236 ; \u9632\u9B54"
+  - Name: "\u30A4\u30A8\u30ED\u30FC\u30AA\u30FC\u30AC"
+    CardType: 4
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30A6\u30A3\u30C3\u30C1"
+    CardType: 4
+    RereType: 1
+    Cost: 55
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u5F37\u6253 ; \u79D8\u8853[G30\u30FB\u5BFE\u8C61\u304B\u3089\u624B\u672D\u306E\u30B9\u30DA\u30EB\u306E\u6570\xD7G40\u3092\u596A\u3046]"
+  - Name: "\u30A8\u30A2\u30ED\u30C0\u30C3\u30C1\u30A7\u30B9"
+    CardType: 4
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 0300000003000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u5DFB\u7269\u5F37\u6253 ; \u79D8\u8853[G50\u30FB\u5BFE\u8C61\u6575\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306EMHP-10]"
+  - Name: "\u30A8\u30EB\u30D5\u30A2\u30FC\u30C1\u30E3\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 03000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u79D8\u8853[G20\u30FB\u5BFE\u8C61\u6575\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306EHP-10]"
+  - Name: "\u30A8\u30F3\u30C1\u30E3\u30F3\u30C8\u30EC\u30B9"
+    CardType: 4
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 10
+    Hp: 20
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u5DFB\u7269\u5F37\u6253 ; \u3053\u308C\u306B\u546A\u3044\u4ED8\u4E0E\u6642\u3001\u540C\u3058\u546A\u3044\u3092\u4F7F\u7528\u8005\u306E\u5168\u9818\u5730\u306B\u3064\u3051\u3001\u30C0\u30A6\u30F3\u3059\u308B"
+  - Name: "\u30AB\u30E9\u30C9\u30EA\u30A6\u30B9"
+    CardType: 4
+    RereType: 0
+    Cost: 60
+    AdditionCostTypes: 
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u79D8\u8853[G40\u30FB\u5BFE\u8C61\u9818\u5730\u306B\u546A\u3044\"\"\u80FD\u529B\u5024+20\"\"]"
+  - Name: "\u30AC\u30EB\u30FC\u30C0"
+    CardType: 4
+    RereType: 1
+    Cost: 40
+    AdditionCostTypes: 0300000003000000
+    St: 0
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP=\u98A8\u914D\u7F6E\u6570\xD710"
+  - Name: "\u30AD\u30EA\u30F3"
+    CardType: 4
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u611F\u5FDC[\u6C34\u30FBST&HP+20]"
+  - Name: "\u30AF\u30FC\u30FB\u30B7\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u611F\u5FDC[\u6C34\u30FBST+10\u3001HP+20] ; \u9632\u9B54"
+  - Name: "\u30AF\u30E9\u30A6\u30C9\u30AE\u30BA\u30E2"
+    CardType: 4
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 10
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G20\u30FB\u5BFE\u8C61\u306E\u624B\u672D\u30921\u679A\u7834\u58CA\u3001\u5BFE\u8C61\u306F\u30AB\u30FC\u30C9\u30921\u679A\u5F15\u304F]"
+  - Name: "\u30B0\u30EA\u30D5\u30A9\u30F3"
+    CardType: 4
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: '-'
+  - Name: "\u30B0\u30EC\u30FC\u30C8\u30CB\u30F3\u30D0\u30B9"
+    CardType: 4
+    RereType: 0
+    Cost: 100
+    AdditionCostTypes: 
+    St: 30
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u4E0D\u5C48"
+  - Name: "\u30B0\u30EC\u30E0\u30EA\u30F3"
+    CardType: 4
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u7834\u58CA"
+  - Name: "\u30B1\u30F3\u30BF\u30A6\u30ED\u30B9"
+    CardType: 4
+    RereType: 0
+    Cost: 80
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u30A2\u30A4\u30C6\u30E0\u5FA9\u5E30[\u30D6\u30C3\u30AF]"
+  - Name: "\u30B3\u30FC\u30F3\u30D5\u30A9\u30FC\u30AF"
+    CardType: 4
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u3084\u30B9\u30DA\u30EB\u3067\u306E\u7834\u58CA\u6642\u3001\u907A\u7523[G200]"
+  - Name: "\u30B5\u30FC\u30DA\u30F3\u30C8\u30D5\u30E9\u30A4"
+    CardType: 4
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u5148\u5236 ; \u6C34\u304B\u3089\u3082\u5730\u5F62\u52B9\u679C\u3092\u5F97\u308B"
+  - Name: "\u30B5\u30E0\u30CF\u30A4\u30F3"
+    CardType: 4
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 04000000
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5408\u6210[\u546A\u3044\u30B9\u30DA\u30EB\u30FBST+20] ; \u6226\u95D8\u5F8C\u3001\u6575\u306EMHP-\u3053\u308C\u306E\u57FA\u672CST"
+  - Name: "\u30B5\u30F3\u30C0\u30FC\u30B9\u30DD\u30FC\u30F3"
+    CardType: 4
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 03000000
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u6C34\u81EA\u9818\u5730\u6570\xD710 ; \u6575\u9818\u5730\u79FB\u52D5[\u5C5E\u6027\u306E\u9055\u3046\u6575\u9818\u5730]"
+  - Name: "\u30B7\u30EB\u30D5"
+    CardType: 4
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 20
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[MHP40\u4EE5\u4E0A] ; \u79D8\u8853[G60\u30FB\u30AC\u30EB\u30FC\u30C0\u306B\u5909\u8EAB]"
+  - Name: "\u30B9\u30AB\u30E9\u30DA\u30F3\u30C9\u30E9"
+    CardType: 4
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 04000000
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5408\u6210[\u6C34\u30FB\u30C7\u30A3\u30FC\u30D7\u30B7\u30FC\u30C9\u30E9\u30B4\u30F3\u306B\u5909\u8EAB]
+      ; \u653B\u6483\u6210\u529F\u6642\u3001\u6575\u306B\u546A\u3044\"\"\u8870\u5F31"
+  - Name: "\u30B9\u30DA\u30AF\u30BF\u30FC"
+    CardType: 4
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP=10\u301C70"
+  - Name: "\u30B9\u30EC\u30A4\u30D7\u30CB\u30EB"
+    CardType: 4
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 30
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G60\u30FB\u5BFE\u8C61\u81EA\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u30921\u301C2\u30DE\u30B9\u79FB\u52D5]"
+  - Name: "\u30BD\u30A6\u30EB\u30B3\u30EC\u30AF\u30BF\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 04000000
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u7834\u58CA\u6570\xD75"
+  - Name: "\u30BD\u30FC\u30C9\u30D7\u30EA\u30F3\u30BB\u30B9"
+    CardType: 4
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 03000000
+    St: 40
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; HP\u52B9\u679C\u7121\u52B9 ; \u79D8\u8853[G60\u30FB\u30A2\u30FC\u30E0\u30C9\u30D7\u30EA\u30F3\u30BB\u30B9\u306B\u5909\u8EAB]"
+  - Name: "\u30C0\u30F3\u30D4\u30FC\u30EB"
+    CardType: 4
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 03000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u5730] ; \u5373\u6B7B[\u5730\u30FB60%]"
+  - Name: "\u30C6\u30C8\u30E9\u30FC\u30E0"
+    CardType: 4
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 03000000
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "2\u56DE\u653B\u6483"
+  - Name: "\u30C7\u30D0\u30B9\u30C6\u30A4\u30BF\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 80
+    AdditionCostTypes: 03000000
+    St: 50
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u4FB5\u7565\u6642\u3001\u571F\u5730\u7834\u58CA"
+  - Name: "\u30C7\u30E5\u30FC\u30F3\u30BF\u30A4\u30BF\u30F3"
+    CardType: 4
+    RereType: 2
+    Cost: 75
+    AdditionCostTypes: 
+    St: 50
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u914D\u7F6E\u9818\u5730\u3067\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\u307E\u305F\u306F\u5730\u5F62\u5909\u5316\u6642\u3001MHP-10"
+  - Name: "\u30C6\u30E5\u30DD\u30FC\u30F3"
+    CardType: 4
+    RereType: 1
+    Cost: 110
+    AdditionCostTypes: 0300000003000000
+    St: 60
+    Hp: 60
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u5F37\u6253[\u706B\u5730] ; \u571F\u5730\u5909\u6027[\u98A8]"
+  - Name: "\u30C8\u30EB\u30CD\u30FC\u30C9"
+    CardType: 4
+    RereType: 0
+    Cost: 55
+    AdditionCostTypes: 
+    St: 20
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u5FA1\u578B ; \u5148\u5236 ; ST+20\u3001HP-10"
+  - Name: "\u30C8\u30EC\u30B8\u30E3\u30FC\u30EC\u30A4\u30C0\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 90
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u4FB5\u7565\u6642\u3001\u9B54\u529B\u7372\u5F97[G100] ; \u4E0D\u5C48"
+  - Name: "\u30CA\u30A4\u30AD\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 03000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u653B\u6483\u6210\u529F\u6642\u3001\u6575\u306B\u546A\u3044\"\"\u6226\u95D8\u884C\u52D5\u4E0D\u53EF"
+  - Name: "\u30CA\u30A4\u30C8"
+    CardType: 4
+    RereType: 0
+    Cost: 90
+    AdditionCostTypes: 
+    St: 50
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5F37\u6253[MHP50\u4EE5\u4E0A]"
+  - Name: "\u30CA\u30A4\u30C8\u30E1\u30A2"
+    CardType: 4
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 03000000
+    St: 30
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u8CAB\u901A"
+  - Name: "\u30D1\u30A6\u30C0\u30FC\u30A4\u30FC\u30BF\u30FC"
+    CardType: 4
+    RereType: 2
+    Cost: 10
+    AdditionCostTypes: 
+    St: 1
+    Hp: 1
+    LimitAttributeTypes: 
+    AbilityName: "\u79FB\u52D5\u6642\u3001\u5143\u306E\u9818\u5730\u3068\u79FB\u52D5\u5148\u306E\u4E21\u65B9\u306B\u914D\u7F6E\u3055\u308C\u308B"
+  - Name: "\u30D1\u30C8\u30ED\u30CA\u30B9"
+    CardType: 4
+    RereType: 1
+    Cost: 30
+    AdditionCostTypes: 03000000
+    St: 30
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u9632\u9B54 ; \u79D8\u8853[G50\u30FB\u5BFE\u8C61\u30BB\u30D7\u30BF\u30FC\u306B\u546A\u3044\"\"\u9632\u9B54\"\"]"
+  - Name: "\u30D6\u30EA\u30FC\u30BA\u30B9\u30D4\u30EA\u30C3\u30C8"
+    CardType: 4
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u7A7A\u5730\u79FB\u52D5[\u98A8\u6C34]"
+  - Name: "\u30D6\u30EA\u30C3\u30C4\u30EC\u30A4\u30D6\u30F3"
+    CardType: 4
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 30
+    Hp: 20
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236"
+  - Name: "\u30D7\u30EB\u30AC\u30B5\u30EA"
+    CardType: 4
+    RereType: 2
+    Cost: 90
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u4F7F\u7528\u6642\u3001ST+20 ; \u6575\u30A2\u30A4\u30C6\u30E0\u4F7F\u7528\u306E\u6226\u95D8\u5F8C\u3001MHP+10"
+  - Name: "\u30DB\u30FC\u30EA\u30FC\u30E9\u30DE"
+    CardType: 4
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G50\u30FB\u4F7F\u7528\u8005\u306B\u546A\u3044\"\"\u30C0\u30A4\u30B96\"\"]"
+  - Name: "\u30DE\u30FC\u30B7\u30E3\u30EB\u30E2\u30F3\u30AF"
+    CardType: 4
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 04000000
+    St: 20
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5408\u6210[\u30A2\u30A4\u30C6\u30E0\u30FBST+40\u3001MHP-10] ;
+      \u5148\u5236 ; \u4E0D\u5C48"
+  - Name: "\u30DE\u30C3\u30C9\u30CF\u30FC\u30EC\u30AF\u30A4\u30F3"
+    CardType: 4
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 20
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5FDC\u63F4[\u81EA\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u30FBST&HP+\u96A3\u63A5\u81EA\u9818\u5730\u6570\xD720]
+      ; \u4E0D\u5C48"
+  - Name: "\u30E8\u30FC\u30A6\u30A3"
+    CardType: 4
+    RereType: 0
+    Cost: 70
+    AdditionCostTypes: 
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5F37\u6253[\u7121] ; \u901A\u884C\u6599\u5909\u5316[1/2\u301C2.5\u500D]"
+  - Name: "\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30C9\u30E9\u30B4\u30F3"
+    CardType: 4
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 0300000003000000
+    St: 50
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u79D8\u8853[G60\u30FB\u5BFE\u8C61\u6575\u6C34\u5730\u306EHP-20]"
+  - Name: "\u30EB\u30D5"
+    CardType: 4
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 03000000
+    St: 40
+    Hp: 50
+    LimitAttributeTypes: 
+    AbilityName: "\u611F\u5FDC[\u6C34\u30FBST+30]"
+  - Name: "\u30EC\u30E0\u30EC\u30FC\u30B9"
+    CardType: 4
+    RereType: 1
+    Cost: 30
+    AdditionCostTypes: 03000000
+    St: 20
+    Hp: 30
+    LimitAttributeTypes: 
+    AbilityName: "\u79D8\u8853[G50\u30FB\u5BFE\u8C61\u6575\u624B\u672D\u306E\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u30921\u679A\u596A\u3044\u3001\u3053\u308C\u304C\u5BFE\u8C61\u306E\u624B\u672D\u306B\u79FB\u52D5]"
+  - Name: "\u30ED\u30FC\u30C9\u30AA\u30D6\u30D9\u30A4\u30F3"
+    CardType: 4
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 030000000300000004000000
+    St: 70
+    Hp: 60
+    LimitAttributeTypes: 00000000
+    AbilityName: "\u5FDC\u63F4[\u6C34\u98A8\u30FBST+10] ; \u79D8\u8853[G60\u30FBST30\u4EE5\u4E0B\u3092ST+20\u3001ST50\u4EE5\u4E0A\u3092ST-20]"
+  - Name: "\u30EF\u30A4\u30D0\u30FC\u30F3"
+    CardType: 4
+    RereType: 0
+    Cost: 60
+    AdditionCostTypes: 03000000
+    St: 40
+    Hp: 40
+    LimitAttributeTypes: 
+    AbilityName: "\u5148\u5236 ; \u7A7A\u5730\u79FB\u52D5[\u98A8]"
+  - Name: "\u30A2\u30FC\u30B8\u30A7\u30F3\u30C8\u30AD\u30FC"
+    CardType: 6
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+10 ; \u5148\u5236 ; \u653B\u6483\u3067\u6575\u975E\u7834\u58CA\u6642\u3001\u4F7F\u7528\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u306F\u30E9\u30F3\u30C0\u30E0\u306A\u7A7A\u5730\u306B\u98DB\u3076"
+  - Name: "\u30A2\u30FC\u30E1\u30C3\u30C8"
+    CardType: 6
+    RereType: 0
+    Cost: 45
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST-10 ; HP+40
+  - Name: "\u30A2\u30F3\u30B0\u30EA\u30FC\u30DE\u30B9\u30AF"
+    CardType: 6
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+30 ; \u8FFD\u52A0\u30C0\u30E1\u30FC\u30B8[\u81EA\u5206\u304C\u53D7\u3051\u305F\u30C0\u30E1\u30FC\u30B8]"
+  - Name: "\u30A4\u30FC\u30B0\u30EB\u30EC\u30A4\u30D4\u30A2"
+    CardType: 7
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+30 ; \u5148\u5236"
+  - Name: "\u30A6\u30A9\u30FC\u30ED\u30C3\u30AF\u30C7\u30A3\u30B9\u30AF"
+    CardType: 6
+    RereType: 1
+    Cost: 110
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u6226\u95D8\u4E2D\u80FD\u529B\u7121\u52B9"
+  - Name: "\u30A8\u30BF\u30FC\u30CA\u30EB\u30E1\u30A4\u30EB"
+    CardType: 8
+    RereType: 1
+    Cost: 40
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+40 ; \u5FA9\u5E30[\u30D6\u30C3\u30AF]"
+  - Name: "\u30A8\u30F3\u30B8\u30A7\u30EB\u30B1\u30FC\u30D7"
+    CardType: 8
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+40 ; \u30A2\u30A4\u30C6\u30E0\u7834\u58CA\u30FB\u76D7\u307F\u7121\u52B9"
+  - Name: "\u30AA\u30FC\u30E9\u30B9\u30C8\u30E9\u30A4\u30AF"
+    CardType: 5
+    RereType: 1
+    Cost: 90
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST=\u57FA\u672CST]"
+  - Name: "\u30AB\u30BF\u30D1\u30EB\u30C8"
+    CardType: 7
+    RereType: 0
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+30 ; HP+30
+  - Name: "\u30AF\u30EC\u30A4\u30E2\u30A2"
+    CardType: 7
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+50
+  - Name: "\u30B0\u30EC\u30E0\u30EA\u30F3\u30A2\u30A4"
+    CardType: 6
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u30A2\u30A4\u30C6\u30E0\u7834\u58CA[\u30EC\u30A2\u5EA6N\u4EE5\u5916]"
+  - Name: "\u30B4\u30FC\u30EB\u30C9\u30B0\u30FC\u30B9"
+    CardType: 6
+    RereType: 2
+    Cost: 0
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u907A\u7523[MHP\xD7G7]"
+  - Name: "\u30B4\u30FC\u30EB\u30C9\u30CF\u30F3\u30DE\u30FC"
+    CardType: 7
+    RereType: 0
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+40 ; \u653B\u6483\u3067\u6575\u975E\u7834\u58CA\u6642\u3001\u9B54\u529B\u7372\u5F97[G200]"
+  - Name: "\u30B5\u30AD\u30E5\u30D0\u30B9\u30EA\u30F3\u30B0"
+    CardType: 6
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST\u30C9\u30EC\u30A4\u30F3 ; \u5148\u5236"
+  - Name: "\u30B7\u30A7\u30A4\u30C9\u30AF\u30ED\u30FC"
+    CardType: 7
+    RereType: 1
+    Cost: 90
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u6575\u3068\u540C\u5C5E\u6027\u306E\u914D\u7F6E\u6570\xD710"
+  - Name: "\u30B7\u30E3\u30C9\u30A6\u30D6\u30EC\u30A4\u30BA"
+    CardType: 5
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST40] ; \u6575\u3068\u540C\u3058\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC\u914D\u7F6E\u6642\u3001\u5DFB\u7269\u5F37\u6253"
+  - Name: "\u30B7\u30EB\u30D0\u30FC\u30D7\u30ED\u30A6"
+    CardType: 6
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u571F\u5730\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7 ; ST+10 ; HP+20"
+  - Name: "\u30B9\u30AF\u30A4\u30C9\u30DE\u30F3\u30C8\u30EB"
+    CardType: 8
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+40 ; \u6575\u306E\u653B\u6483\u6210\u529F\u6642\u80FD\u529B\u7121\u52B9"
+  - Name: "\u30B9\u30B1\u30FC\u30EB\u30A2\u30FC\u30DE\u30FC"
+    CardType: 8
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: HP+40
+  - Name: "\u30B9\u30C8\u30FC\u30E0\u30A2\u30FC\u30DE\u30FC"
+    CardType: 8
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+\u6C34\u98A8\u81EA\u9818\u5730\u6570\xD720"
+  - Name: "\u30B9\u30C8\u30FC\u30E0\u30B3\u30FC\u30B6\u30FC"
+    CardType: 7
+    RereType: 1
+    Cost: 55
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+60 ; HP-30
+  - Name: "\u30B9\u30C8\u30FC\u30E0\u30B7\u30FC\u30EB\u30C9"
+    CardType: 8
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u6C34\u98A8\u4F7F\u7528\u6642\u3001\u7121\u52B9\u5316[\u901A\u5E38\u653B\u6483]"
+  - Name: "\u30B9\u30C8\u30FC\u30E0\u30B9\u30D4\u30A2"
+    CardType: 7
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+20 ; \u6C34\u98A8\u4F7F\u7528\u6642\u3001\u5F37\u6253"
+  - Name: "\u30B9\u30C8\u30FC\u30E0\u30CF\u30EB\u30D0\u30FC\u30C9"
+    CardType: 7
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u6C34\u98A8\u914D\u7F6E\u6570\xD75 ; \u5F37\u6253[\u706B\u5730]"
+  - Name: "\u30B9\u30D1\u30FC\u30AF\u30DC\u30FC\u30EB"
+    CardType: 5
+    RereType: 0
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST40]"
+  - Name: "\u30B9\u30D1\u30A4\u30AF\u30B7\u30FC\u30EB\u30C9"
+    CardType: 8
+    RereType: 2
+    Cost: 40
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u53CD\u5C04[1/2]"
+  - Name: "\u30B9\u30D5\u30A3\u30A2\u30B7\u30FC\u30EB\u30C9"
+    CardType: 8
+    RereType: 2
+    Cost: 100
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST=0 ; \u7121\u52B9\u5316[\u901A\u5E38\u653B\u6483]"
+  - Name: "\u30B9\u30DA\u30AF\u30BF\u30FC\u30ED\u30FC\u30D6"
+    CardType: 8
+    RereType: 0
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP+10\u301C70"
+  - Name: "\u30B9\u30EA\u30F3\u30B0"
+    CardType: 6
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP+10 ; \u5148\u5236"
+  - Name: "\u30BC\u30E9\u30C1\u30F3\u30A2\u30FC\u30DE\u30FC"
+    CardType: 8
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+40 ; \u9B54\u529B\u7372\u5F97[\u53D7\u3051\u305F\u30C0\u30E1\u30FC\u30B8\xD7G5]"
+  - Name: "\u30BD\u30A6\u30EB\u30EC\u30A4"
+    CardType: 5
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST30] ; \u5FA9\u5E30[\u624B\u672D]"
+  - Name: "\u30BF\u30FC\u30B3\u30A4\u30BA\u30A2\u30E0\u30EB"
+    CardType: 6
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5373\u6B7B[\u6C34\u5730\u30FB60%] ; \u7121\u52B9\u5316[\u6C34\u5730]"
+  - Name: "\u30C0\u30A4\u30E4\u30A2\u30FC\u30DE\u30FC"
+    CardType: 8
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST-30 ; HP+60 ; \u5F8C\u624B"
+  - Name: "\u30C1\u30A7\u30A4\u30F3\u30E1\u30A4\u30EB"
+    CardType: 8
+    RereType: 0
+    Cost: 10
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: HP+30
+  - Name: "\u30C1\u30A7\u30FC\u30F3\u30BD\u30FC"
+    CardType: 7
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u6226\u95D8\u5730\u306E\u9023\u9396\u6570\xD720"
+  - Name: "\u30C1\u30EA\u30F3\u30B0\u30D6\u30E9\u30B9\u30C8"
+    CardType: 5
+    RereType: 1
+    Cost: 90
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST=\u6C34\u98A8\u81EA\u9818\u5730\u6570\xD710]
+      ; \u5DFB\u7269\u5F37\u6253[\u706B\u5730]"
+  - Name: "\u30C4\u30A4\u30F3\u30B9\u30D1\u30A4\u30AF"
+    CardType: 6
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+20 ; \u5F37\u5236\u5909\u5316[\u4F7F\u7528\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC]"
+  - Name: "\u30C6\u30A3\u30A2\u30EA\u30F3\u30B0\u30CF\u30ED\u30FC"
+    CardType: 5
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST30] ; \u7121\u4EE5\u5916\u4F7F\u7528\u6642\u3001\u5DFB\u7269\u5F37\u6253
+      ; \u30A2\u30A4\u30C6\u30E0\u7834\u58CA\u30FB\u76D7\u307F\u7121\u52B9"
+  - Name: "\u30C8\u30A5\u30FC\u30E0\u30B9\u30C8\u30FC\u30F3"
+    CardType: 6
+    RereType: 2
+    Cost: 0
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u81EA\u7834\u58CA\u6642\u3001\u624B\u672D6\u679A\u307E\u3067\u30AB\u30FC\u30C9\u3092\u5F15\u304F
+      ; \u30A2\u30A4\u30C6\u30E0\u7834\u58CA\u30FB\u76D7\u307F\u7121\u52B9"
+  - Name: "\u30C8\u30D1\u30FC\u30BA\u30A2\u30E0\u30EB"
+    CardType: 6
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5373\u6B7B[\u706B\u98A8\u30FB60%] ; \u7121\u52B9\u5316[\u706B\u98A8]"
+  - Name: "\u30C8\u30E9\u30A4\u30C7\u30F3\u30C8"
+    CardType: 7
+    RereType: 0
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+40 ; HP+20
+  - Name: "\u30C9\u30E9\u30B4\u30F3\u30AA\u30FC\u30D6"
+    CardType: 6
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5909\u8EAB[\u3044\u305A\u308C\u304B\u306E\u30C9\u30E9\u30B4\u30F3]"
+  - Name: "\u30C9\u30EA\u30EB\u30E9\u30F3\u30B9"
+    CardType: 7
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+20 ; \u8CAB\u901A"
+  - Name: "\u30C8\u30F3\u30D5\u30A1"
+    CardType: 7
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "2\u56DE\u653B\u6483"
+  - Name: "\u30CA\u30D1\u30FC\u30E0\u30A2\u30ED\u30FC"
+    CardType: 7
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+30 ; HP+20 ; \u96EA\u8FB1[\u6575\u306EMHP-40]"
+  - Name: "\u30CB\u30E5\u30FC\u30C8\u30E9\u30EB\u30AF\u30ED\u30FC\u30AF"
+    CardType: 8
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+40 ; \u5C5E\u6027\u5909\u5316[\u7121]"
+  - Name: "\u30CD\u30AF\u30ED\u30B9\u30AB\u30E9\u30D9"
+    CardType: 6
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u6B7B\u8005\u5FA9\u6D3B[\u30B9\u30B1\u30EB\u30C8\u30F3]"
+  - Name: "\u30CD\u30AF\u30ED\u30D7\u30E9\u30BA\u30DE"
+    CardType: 5
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST50] ; \u5909\u8EAB[\u30B9\u30B1\u30EB\u30C8\u30F3]"
+  - Name: "\u30D0\u30FC\u30CB\u30F3\u30B0\u30CF\u30FC\u30C8"
+    CardType: 6
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST&HP+20 ; \u9053\u9023\u308C"
+  - Name: "\u30D0\u30FC\u30CB\u30F3\u30B0\u30ED\u30C3\u30C9"
+    CardType: 5
+    RereType: 1
+    Cost: 90
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u5DFB\u7269\u653B\u6483[ST=\u706B\u5730\u81EA\u9818\u5730\u6570\xD710]
+      ; \u5DFB\u7269\u5F37\u6253[\u6C34\u98A8]"
+  - Name: "\u30D0\u30A4\u30F3\u30C9\u30A6\u30A3\u30C3\u30D7"
+    CardType: 7
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+30 ; \u653B\u6483\u6210\u529F\u6642\u3001\u6575\u306B\u546A\u3044\"\"\u6226\u95D8\u884C\u52D5\u4E0D\u53EF"
+  - Name: "\u30D0\u30BF\u30EA\u30F3\u30B0\u30E9\u30E0"
+    CardType: 7
+    RereType: 0
+    Cost: 40
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+30 ; \u5373\u6B7B[\u9632\u5FA1\u578B]"
+  - Name: "\u30D0\u30C3\u30AF\u30E9\u30FC"
+    CardType: 8
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[ST30\u4EE5\u4E0B]"
+  - Name: "\u30D0\u30C8\u30EB\u30A2\u30C3\u30AF\u30B9"
+    CardType: 7
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+40
+  - Name: "\u30D6\u30FC\u30E1\u30E9\u30F3"
+    CardType: 7
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+20 ; HP+10 ; \u5FA9\u5E30[\u624B\u672D]"
+  - Name: "\u30D5\u30A9\u30FC\u30B9\u30A2\u30F3\u30AF\u30EC\u30C3\u30C8"
+    CardType: 6
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+\u81EA\u624B\u672D\u6570\xD710"
+  - Name: "\u30D7\u30E9\u30C3\u30AF\u30BD\u30FC\u30C9"
+    CardType: 7
+    RereType: 0
+    Cost: 40
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+40 ; \u30EC\u30A2\u5EA6N\u304C\u4F7F\u7528\u6642\u3001\u5F37\u6253"
+  - Name: "\u30D7\u30EA\u30BA\u30E0\u30EF\u30F3\u30C9"
+    CardType: 7
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u6575\u3068\u5C5E\u6027\u304C\u9055\u3046\u5834\u5408\u3001ST&HP+40"
+  - Name: "\u30D7\u30EC\u30FC\u30C8\u30E1\u30A4\u30EB"
+    CardType: 8
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: HP+50
+  - Name: "\u30DA\u30C8\u30EA\u30D5\u30B9\u30C8\u30FC\u30F3"
+    CardType: 6
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST=0 ; HP=80
+  - Name: "\u30DC\u30FC\u30D1\u30EB\u30BD\u30FC\u30C9"
+    CardType: 7
+    RereType: 1
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+30 ; \u5F37\u6253[MHP40\u4EE5\u4E0A]"
+  - Name: "\u30DE\u30B0\u30DE\u30A2\u30FC\u30DE\u30FC"
+    CardType: 8
+    RereType: 1
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+\u706B\u5730\u81EA\u9818\u5730\u6570\xD720"
+  - Name: "\u30DE\u30B0\u30DE\u30B7\u30FC\u30EB\u30C9"
+    CardType: 8
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u706B\u5730\u4F7F\u7528\u6642\u3001\u7121\u52B9\u5316[\u901A\u5E38\u653B\u6483]"
+  - Name: "\u30DE\u30B0\u30DE\u30CF\u30F3\u30DE\u30FC"
+    CardType: 7
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+20 ; \u706B\u5730\u4F7F\u7528\u6642\u3001\u5F37\u6253"
+  - Name: "\u30DE\u30B0\u30DE\u30D5\u30EC\u30A4\u30EB"
+    CardType: 7
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+\u706B\u5730\u914D\u7F6E\u6570\xD75 ; \u5F37\u6253[\u6C34\u98A8]"
+  - Name: "\u30DE\u30B8\u30C3\u30AF\u30B7\u30FC\u30EB\u30C9"
+    CardType: 8
+    RereType: 0
+    Cost: 20
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+30 ; \u7121\u52B9\u5316[\u5DFB\u7269]"
+  - Name: "\u30DF\u30E9\u30FC\u30DB\u30D7\u30ED\u30F3"
+    CardType: 8
+    RereType: 2
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u6575\u30A2\u30A4\u30C6\u30E0\u672A\u4F7F\u7528\u6642\u3001\u53CD\u5C04[\u5168]"
+  - Name: "\u30E0\u30FC\u30F3\u30B7\u30DF\u30BF\u30FC"
+    CardType: 7
+    RereType: 0
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+30 ; \u653B\u6483\u6210\u529F\u6642\u3001\u6575\u306B\u546A\u3044\"\"\u901A\u884C\u6599\u7121\u52B9"
+  - Name: "\u30E0\u30E9\u30B5\u30E1"
+    CardType: 7
+    RereType: 1
+    Cost: 80
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "ST+20 ; \u6575\u306E\u653B\u6483\u7121\u52B9\u5316\u30FB\u53CD\u5C04\u7121\u52B9"
+  - Name: "\u30E1\u30A4\u30AC\u30B9\u30DF\u30E9\u30FC"
+    CardType: 6
+    RereType: 2
+    Cost: 30
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+20 ; \u53CD\u5C04[\u5DFB\u7269]"
+  - Name: "\u30E1\u30A4\u30B9"
+    CardType: 7
+    RereType: 0
+    Cost: 0
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+20
+  - Name: "\u30E9\u30B0\u30C9\u30FC\u30EB"
+    CardType: 6
+    RereType: 2
+    Cost: 60
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u5DFB\u7269] ; \u7121\u52B9\u5316[\u81EA\u5206\u3088\u308AST\u306E\u5927\u304D\u306A\u30AF\u30EA\u30FC\u30C1\u30E3\u30FC]"
+  - Name: "\u30EA\u30A2\u30AF\u30C8\u30A2\u30FC\u30DE\u30FC"
+    CardType: 8
+    RereType: 1
+    Cost: 50
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "HP+30 ; \u30A2\u30A4\u30C6\u30E0\u7834\u58CA[\u6B66\u5668]"
+  - Name: "\u30ED\u30F3\u30B0\u30BD\u30FC\u30C9"
+    CardType: 7
+    RereType: 0
+    Cost: 10
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: ST+30
+  - Name: "\u30EF\u30F3\u30C0\u30FC\u30C1\u30E3\u30FC\u30E0"
+    CardType: 6
+    RereType: 2
+    Cost: 70
+    AdditionCostTypes: 
+    St: 0
+    Hp: 0
+    LimitAttributeTypes: 
+    AbilityName: "\u7121\u52B9\u5316[\u901A\u5E38\u653B\u6483\u306E80%]"
