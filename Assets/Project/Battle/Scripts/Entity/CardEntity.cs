@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public sealed class CardEntity
@@ -8,9 +9,9 @@ public sealed class CardEntity
     /// </summary>
     public string Name;
     /// <summary>
-    /// 土地の属性
+    /// カードの種類
     /// </summary>
-    public AttributeType AttributeType;
+    public CardType CardType;
     /// <summary>
     /// レア度
     /// </summary>
@@ -19,6 +20,10 @@ public sealed class CardEntity
     /// コスト
     /// </summary>
     public int Cost;
+    /// <summary>
+    /// 追加コスト
+    /// </summary>
+    public List<AdditionCostType> AdditionCostTypes;
     /// <summary>
     /// ST
     /// </summary>
@@ -30,7 +35,7 @@ public sealed class CardEntity
     /// <summary>
     /// 配置制限
     /// </summary>
-    public AttributeType LimitAttributeType;
+    public List<LimitAttributeType> LimitAttributeTypes;
     /// <summary>
     /// 能力名
     /// </summary>

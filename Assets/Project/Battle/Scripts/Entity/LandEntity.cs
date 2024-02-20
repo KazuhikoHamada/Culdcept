@@ -6,7 +6,7 @@ public sealed class LandEntity
     /// <summary>
     /// 土地の属性
     /// </summary>
-    public AttributeType AttributeType;
+    public LandType LandType;
     /// <summary>
     /// 価値
     /// </summary>

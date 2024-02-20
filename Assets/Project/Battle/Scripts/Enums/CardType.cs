@@ -1,16 +1,12 @@
 /// <summary>
-/// 属性
+/// カード種類
 /// </summary>
-public enum AttributeType
+public enum CardType
 {
     /// <summary>
     /// 無
     /// </summary>
     None,
-    /// <summary>
-    /// ゲート
-    /// </summary>
-    Gate,
     /// <summary>
     /// 火
     /// </summary>
@@ -27,4 +23,20 @@ public enum AttributeType
     /// 風
     /// </summary>
     Wind,
+    /// <summary>
+    /// 巻物
+    /// </summary>
+    Scroll,
+    /// <summary>
+    /// 道具
+    /// </summary>
+    Tool,
+    /// <summary>
+    /// 武器
+    /// </summary>
+    Weapon,
+    /// <summary>
+    /// 防具
+    /// </summary>
+    Armor,
 }
