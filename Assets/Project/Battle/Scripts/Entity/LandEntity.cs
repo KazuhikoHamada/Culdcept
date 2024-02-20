@@ -4,9 +4,9 @@ using System;
 public sealed class LandEntity
 {
     /// <summary>
-    /// 土地の種類
+    /// 土地の属性
     /// </summary>
-    public LandType LandType;
+    public AttributeType AttributeType;
     /// <summary>
     /// 価値
     /// </summary>

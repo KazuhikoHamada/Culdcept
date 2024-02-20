@@ -1,4 +1,7 @@
-public enum LandType
+/// <summary>
+/// 属性
+/// </summary>
+public enum AttributeType
 {
     /// <summary>
     /// 無
