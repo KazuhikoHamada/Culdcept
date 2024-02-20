@@ -1,8 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
+[Serializable]
 public sealed class LandEntity
 {
-
+    /// <summary>
+    /// 土地の種類
+    /// </summary>
+    public LandType LandType;
+    /// <summary>
+    /// 価値
+    /// </summary>
+    public int Value;
+    /// <summary>
+    /// 通行料
+    /// </summary>
+    public int Toll;
+    /// <summary>
+    /// 土地のグループ
+    /// </summary>
+    public LandGroup LandGroup;
 }
