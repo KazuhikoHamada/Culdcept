@@ -511,6 +511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e2edd588d36bc499296ec78a9d29ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _debugButton: {fileID: 1459198637}
+  _playerViewPrefab: {fileID: 450243869673252556, guid: c01936b604483324fa7ff26a8cfae3b6, type: 3}
 --- !u!4 &771535731
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,10 @@ public sealed class LandView : MonoBehaviour
     [SerializeField] LandView _nextLandView;
     [SerializeField] List<LandSpriteView> _landSpriteViewList;
 
+    public Vector2 Position => transform.position;
+    public bool IsGoal => _isGoal;
+    public LandView NextLandView => _nextLandView;
+
     void OnValidate()
     {
         var sprite = _landSpriteViewList.Where(n => n.LandType == LandEntity.LandType).Select(n => n.Sprite).FirstOrDefault();
