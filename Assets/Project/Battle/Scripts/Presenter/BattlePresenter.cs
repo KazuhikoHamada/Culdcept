@@ -1,18 +1,22 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VContainer;
+using System.Linq;
+using R3;
 
 public class BattlePresenter : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [Inject] readonly BattleView _battleView;
+    [Inject] readonly DealCardView _dealCardView;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _battleView.OnDealCard.Subscribe(n => 
+        {
+            _dealCardView.Visible = true;
+            _dealCardView.DealCard();
+        }).AddTo(this);
     }
 }

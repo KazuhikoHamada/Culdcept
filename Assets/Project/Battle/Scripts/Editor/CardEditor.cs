@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 
-[CustomEditor(typeof(Card))]
+[CustomEditor(typeof(CardInfo))]
 public class CardEditor : Editor
 {
     const string SheetId = "1yJKamoBnqjUXLyYroL0e5MW3TAFyKnFOcvQ8BAJAq-0";
@@ -36,7 +36,7 @@ public class CardEditor : Editor
             {
                 //Debug.Log( response.downloadHandler.text);
 
-                UpdateCardData((Card)target, response.downloadHandler.text);
+                UpdateCardData((CardInfo)target, response.downloadHandler.text);
             }
             else                            //失敗した場合
             {
@@ -48,22 +48,23 @@ public class CardEditor : Editor
     }
 
 
-    void UpdateCardData(Card card, string data)
+    void UpdateCardData(CardInfo card, string data)
     {
         string[] rows = data.Split(new[] { "\n" }, System.StringSplitOptions.RemoveEmptyEntries);
 
         List<CardEntity> list = new List<CardEntity>();
 
-        int rowIndex = 0;
+        int rowIndex = 1;
 
         foreach (string row in rows)
         {
-            if (rowIndex++ == 0) continue;
+            if (rowIndex++ == 1) continue;
 
             int cellIndex = 0;
             string[] cells = row.Split(new[] { ',' }, System.StringSplitOptions.RemoveEmptyEntries);//一行ずつの情報を1セルずつ配列に格納
 
             var cardEntity = new CardEntity();
+            cardEntity.Name = $"{rowIndex}";
 
             foreach (string cell in cells)
             {
@@ -72,7 +73,7 @@ public class CardEditor : Editor
                 switch (cellIndex)
                 {
                     case 0:
-                        cardEntity.Name = trimCell;
+                        cardEntity.DisplayName = trimCell;
                         break;
                     case 1:
                         switch (trimCell)
@@ -86,7 +87,7 @@ public class CardEditor : Editor
                             case "水":
                                 cardEntity.CardType = CardType.Water;
                                 break;
-                            case "土":
+                            case "地":
                                 cardEntity.CardType = CardType.Soil;
                                 break;
                             case "風":
@@ -151,7 +152,7 @@ public class CardEditor : Editor
                                     case "水":
                                         additionCostTypeList.Add(AdditionCostType.Water);
                                         break;
-                                    case "土":
+                                    case "地":
                                         additionCostTypeList.Add(AdditionCostType.Soil);
                                         break;
                                     case "風":

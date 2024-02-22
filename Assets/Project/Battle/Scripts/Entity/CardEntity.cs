@@ -9,6 +9,10 @@ public sealed class CardEntity
     /// </summary>
     public string Name;
     /// <summary>
+    /// 表示用名前
+    /// </summary>
+    public string DisplayName;
+    /// <summary>
     /// カードの種類
     /// </summary>
     public CardType CardType;

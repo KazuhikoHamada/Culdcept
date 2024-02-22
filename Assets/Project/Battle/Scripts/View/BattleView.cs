@@ -8,10 +8,13 @@ using UnityEngine.UI;
 public class BattleView : MonoBehaviour
 {
     [SerializeField] Button _debugButton;
+    [SerializeField] Button _dealCardButton;
     [SerializeField] PlayerView _playerViewPrefab;
 
-    private LandView[] _landViews;
+    public readonly Subject<Unit> OnDebug = new Subject<Unit>();
+    public readonly Subject<Unit> OnDealCard = new Subject<Unit>();
 
+    private LandView[] _landViews;
     private CancellationToken _token;
 
     private void Start()
@@ -39,6 +42,7 @@ public class BattleView : MonoBehaviour
             await playerView.MoveAsync(diceValue, _token);
 
         }).AddTo(this);
-    }
 
+        _dealCardButton.OnClickAsObservable().Subscribe(_ => OnDealCard.OnNext(Unit.Default)).AddTo(this);
+    }
 }
